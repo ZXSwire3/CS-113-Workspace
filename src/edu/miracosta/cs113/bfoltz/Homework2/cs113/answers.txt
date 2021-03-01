@@ -1,0 +1,23 @@
+RandomClue.java
+How often do you get a solution in fewer than 20 guesses? Does this change depending on the theory you test (1, 2, 3)?
+- Out of the many times I tried all the possible theories, I didn't get a single one that was done in fewer than 20
+guesses.
+
+What is good or bad about this strategy?
+- It's good that it will eventually find it because it'll just keep going guessing random numbers until the answer is
+correct, however it is not really good in this situation because there if you were actually solving a murder there are
+many many times that you would just not even get close to finding the right answer. The program completely ignores the
+information that Jack gives which is pretty silly since he's clearly there to help the person find the answer more
+easily.
+
+OptimizedClue.java
+How often do you get a solution in fewer than 20 guesses? Does this change depending on the theory you test (1, 2, 3)?
+- For theory 1 the program was able to get in 20 tries, for the 2nd theory it was able to get it in 1 try, and for
+theory number 3 it was able to get it every time that I tried to run it.
+
+What is good or bad about this strategy?
+- This way of guessing is better than the previous in the sense that you will be able to more consistently get the
+correct answer in 20 or less guesses, however, in theory there might be a time in theory 3 when the program will just
+not find an answer because it just keeps iterating downwards into negative numbers. So like if multiple answers keep
+being incorrect it will just keep iterating a random one of the 3 options (weapon, location, murder) indefinitely if one
+of them gets past 1 (counting down)
