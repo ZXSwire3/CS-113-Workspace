@@ -1,0 +1,33 @@
+        //Part 1
+        Set<String> s = new HashSet<String>(); // creates a new hashset of strings named s
+        s.add("hello"); //adds "hello" to the hashmap
+        s.add("bye"); //adds "bye" to the hashmap
+        s.addAll(s); //tries to add all the values of s back into the hashmap
+        Set<String> t = new TreeSet<String>(); // creates a new tree set of strings name t
+        t.add("123"); //adds "123" to the tree set
+        s.addAll(t); //adds everything from the tree set to hash set ("123")
+        System.out.println(s.containsAll(t)); //prints out if the hashset has everything from the tree set, it prints out true because it was just added
+        System.out.println(t.containsAll(s)); //prints out if the tree set has everything from the hashset , it prints out false because it doesn't have anything that is also in s
+        System.out.println(s.contains("ace")); //prints out if "ace" is in the hashset, it prints out false
+        System.out.println(s.contains("123")); //prints out if "123" is in the hashset, it prints out true
+        s.retainAll(t); //removes all the values from s that are not in t
+        System.out.println(s.contains("123")); //prints out if "123" is in the hashset, it prints out true
+        t.retainAll(s); //removes all the values from t that are not in s, but since they are the same, nothing happens
+        System.out.println(t.contains("123")); //prints out if "123" is in the tree set, it prints out true
+
+        //Part 2
+        //a
+        c.addAll(a);
+        c.addAll(b);
+        //b
+        c.addAll(a);
+        c.retainAll(b);
+        //c
+        c.addAll(a);
+        c.removeAll(b);
+        //d
+        if (!a.retainAll(b)) {
+            c.addAll(a);
+        } else {
+            c.addAll(b);
+        }

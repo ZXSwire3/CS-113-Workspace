@@ -1,0 +1,26 @@
+If you were using a Map to sore the following lists of items, which date field would you select as the key, and why?
+a. ISBN, because each book has a different ISBN and a map must only have one key, no duplicates
+b. Uniform number, because each player has a different number on their uniform
+c. Model number, because each computer has a different model number
+d. Course ID, because each course has a different course number
+
+//2
+keys     values
+this     1
+line     1,2,3
+is       1,2
+first    1
+and      2
+2        2
+second   2
+followed 3
+by       3
+the      3
+third    3
+
+//3
+lines = index.get("this"); //1
+lines = index.get("that"); //-1
+lines = index.get("line"); //1,2,3
+lines.add(4); //adds a new line (line 4)
+index.put("is", lines); //is 1,2,4
